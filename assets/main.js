@@ -7,11 +7,11 @@ const getTodosFromStorage = () => {
     const stroge = JSON.parse(localStorage.getItem('todos'));
     return (stroge) ? stroge : [];
 }
-
+console.log(localStorage.todos);
 const todosEmpty = () => {
     $(".todosEmpty").css("text-align", "center");
 
-    if(localStorage.todos == "[]") {
+    if(localStorage.todos == "[]" || localStorage.todos == undefined) {
         $(".todosEmpty").css("display", "block");
     }else {
         $(".todosEmpty").css("display", "none");
