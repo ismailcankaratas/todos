@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Yapılacaklar</title>
+    <link rel="stylesheet" href="assets/style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/81a28943d5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2>Yapılacaklar</h2>
+                <i id="todo-filter" class="far fa-square"><span>Yapılanlar</span></i>
+            </div><!--/.card-header-->
+            <div class="card-body">
+                <div class="todosEmpty">
+                    <h2>
+                        Yapılacaklar listesi boş!
+                    </h2>
+                    <span>
+                        Bir liste oluşturmakla başla.
+                    </span>
+                </div>
+                <ul data-filter="0" class="todo-list" id="todo-list">
+
+                </ul><!--/ul.todo-list-->
+            </div><!--/.card-body-->
+            <div class="card-footer">
+                <input id="todo-input" placeholder="Yeni yapılacak.."></input>
+                <button id="todo-button"><i class="fas fa-plus"></i></button>
+            </div><!--card-footer-->
+        </div><!--/card-->
+
+    </div><!--/.container-->
+
+<div class="deneme">
+
+</div>
+
+
+
+
+    <script src="assets/main.js"></script>
+</body>
+</html>
