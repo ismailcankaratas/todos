@@ -31,7 +31,9 @@ body::after {
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
     max-width: 800px;
+    height: 100vh;
     z-index: 1;
     margin: 0 auto; 
 }
@@ -40,7 +42,6 @@ body::after {
     position: relative;
     width: 90%;
     padding: 20px;
-    margin: 50px 0px;
     background: rgb(0,0,0,.8);
     box-shadow: 20px 20px 50px rgb(0, 0, 0,.8);
     color: #fff;
