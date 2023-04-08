@@ -182,17 +182,16 @@ const listFilter = () => {
     const items = todoList.getElementsByClassName('todo-item');
     let array = [].map.call(items,item => item);
     const filter = todoList.dataset.filter;
+
     array.forEach((item) => {
         switch (filter) {
             case "0":
-                todoFilter.className = '';
-                todoFilter.classList.add('far','fa-square');
+                todoFilter.childNodes[0].className = 'far fa-square';
                 item.style.display = 'flex';
             break;
 
             case "1":
-                todoFilter.className = '';
-                todoFilter.classList.add('fas','fa-check-square');
+                todoFilter.childNodes[0].className = 'fas fa-check-square';
                 if (item.classList.contains('todo')) item.style.display = 'none';
                 else item.style.display = 'flex';
             break;
