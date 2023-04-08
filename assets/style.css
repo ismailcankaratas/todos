@@ -50,6 +50,7 @@ body::after {
 .card-header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 10px 0px;
     border-bottom: 3px solid #ff4f81;
 }
@@ -58,8 +59,12 @@ body::after {
     cursor: pointer;
 }
 
-.card-header i span {
+.card-header span {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
     margin: 5px;
+    cursor: pointer;
 }
 
 .card-body {
